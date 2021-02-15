@@ -69,7 +69,7 @@ server <- function(input, output,session){
     )
   })
   
-  # source("downloadData.R")
+  source("downloadData.R")
   
   updateDateInput(session,"date",max = max(df$TIME),min=min(df$TIME),value = as.Date("2021-01-04")) 
   
